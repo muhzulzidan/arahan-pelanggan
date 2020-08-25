@@ -33,8 +33,8 @@ module.exports = {
         postCssPlugins: [
           require(`postcss-preset-env`)(
             {
-             browsers: "> 5%",
-             stage: 3,
+             browsers: "dead", 
+             stage: 0,
              features: {
                "nesting-rules": true
              } 
