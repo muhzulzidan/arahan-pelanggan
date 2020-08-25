@@ -97,7 +97,11 @@ p{
     color: #EBEBEB;
 }
 
+/* social */
+
 .social-div {
+    
+    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -107,6 +111,11 @@ p{
     width: 75vw;
     margin-right: auto;
     margin-left: auto;
+}
+
+.social-div a {
+   margin-right: .5em;
+   margin:0;
 }
 
 .social-div a svg {
