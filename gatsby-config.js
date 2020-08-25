@@ -27,7 +27,22 @@ module.exports = {
         icon: `src/images/Logo.png`, 
       },
     },
-
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require(`postcss-preset-env`)(
+            {
+             browsers: "> 5%",
+             stage: 3,
+             features: {
+               "nesting-rules": true
+             } 
+            }
+        )
+      ],
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 }
